@@ -1,5 +1,5 @@
 # 🤖 Robotics Experiments & Benchmark Tracker Database  
-**Status:** _In Progress – Part 1: Database Design Phase_
+**Status:** In Progress - Part 1: Database Design Phase
 
 ---
 
@@ -34,7 +34,7 @@ Robotics systems rely on continuous experimentation and tuning. This database en
 | Data insertion & queries     | 🔄 Pending |
 | Future ETL/Robotics linkage  | 🔲 Planned |
 
-> _This repository will be continuously updated as I move into implementation._
+> This repository will be continuously updated as I move into implementation.
 
 ---
 
@@ -74,7 +74,7 @@ AI tools were used only for:
 - Brainstorming database ideas  
 - Understanding robotics and database concepts  
 - Structuring content and improving clarity 
-- For this README.md file, restructing sentences, adding more information and creating the overall structure of the document 
+- For this README.md file, restructing sentences, adding more information and creating the overall structure of the document with some artistic flair
 
 **No AI was used to automatically generate the documentation or SQL code. All final content was written by me.**
 **However, AI was used for the generation of the structure of this document**
