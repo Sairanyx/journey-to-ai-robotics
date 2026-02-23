@@ -1,0 +1,37 @@
+1.)
+
+Consider the following so-called Two general's problem and write a short answer in your own words about it. How can the generals solve their problem? How is this related to the topics we have been discussing? Why is this important for data engineering?
+
+Try not to use AI for this. I'm not interested in perfect solution, I'm interested to see you work on the problem.
+
+Two armies, each led by a different general, are preparing to attack a fortified city. The armies are encamped near the city, each in its own valley. A third valley separates the two hills, and the only way for the two generals to communicate is by sending messengers through the valley. Unfortunately, the valley is occupied by the city's defenders and there's a chance that any given messenger sent through the valley will be captured.
+
+While the two generals have agreed that they will attack, they haven't agreed upon a time for an attack. It is required that the two generals have their armies attack the city simultaneously to succeed, lest the lone attacker army die trying. They must thus communicate with each other to decide on a time to attack and to agree to attack at that time, and each general must know that the other general knows that they have agreed to the attack plan. Because acknowledgement of message receipt can be lost as easily as the original message, a potentially infinite series of messages is required to come to consensus.
+
+2.)
+Install Mosquitto MQTT broker by executing the following set of commands in Ubuntu terminal:
+
+- sudo apt update
+- sudo add-apt-repository ppa:mosquitto-dev/mosquitto-ppa
+- sudo apt install mosquitto mosquitto-clients
+
+Check the version of mosquitto installed on your system:
+- mosquitto -version
+
+Check that the mosquitto service is running and enable it so that it is launched when the virtual machine is powered up:
+- sudo systemctl status mosquitto
+- sudo systemctl enable mosquitto
+
+Use the following web pages to test that your mosquitto works by subscribing to a topic "/testtopic" and publishing a message "testing testing 1 2 3" on it with the mosquitto_sub and mosquitto_sub commands.
+https://mosquitto.org/man/mosquitto_sub-1.html
+https://mosquitto.org/man/mosquitto_pub-1.html
+
+3.)
+Implement a Python program that publishes messages to the topic "/example/1" every 0.5 seconds. The program publishes integer numbers starting from 1 and raising the value by 1 on every publish. That is, it publishes integers in order starting from 1.
+
+Check with mosquitto_sub that the messages are really being published onto the topic.
+
+4.)
+Implement a Python program that subscribes to "/example/1". On every message that the program sees on that channel, it multiplies the integer value by 2 and publishes the result on "/example/2".
+
+Check with mosquitto_sub that the messages are really being published onto the topic.
